@@ -117,35 +117,38 @@ const Home = () => {
       </div>
 
 
-      <div className='w-full bg-[#3c64b1]/10 flex flex-col sm:flex flex-row py-10 px-30'>
-        <div>
-          <h1>Title for the key features of the villa goes here</h1>
-          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <div>
-            <ul>
-              <li>Tailored services</li>
-              <li>Effortless arrivals</li>
-              <li>Inspection and vetting</li>
-            </ul>
+      <div className='w-full bg-[#3c64b1]/10 flex flex-col sm:flex-row flex-wrap py-10 px-4 sm:px-10 md:px-20 lg:px-30 gap-8'>
+  <div className='flex-1 space-y-10 pt-20'>
+    <h1 className="text-xl sm:text-2xl font-bold">Title for the key features of the villa goes here</h1>
+    <p className="text-sm text-gray-500 sm:text-base mt-4">
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+    <div className="grid ml-2 grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+      <ul className="space-y-2 list-disc marker:text-[#6d87cb]">
+        <li>Tailored services</li>
+        <li>Effortless arrivals</li>
+        <li>Inspection and vetting</li>
+      </ul>
+      <ul className="space-y-2 list-disc marker:text-[#6d87cb]">
+        <li>Expertly designed</li>
+        <li>Luxury amenities</li>
+        <li>Custom itineraries</li>
+      </ul>
+    </div>
+    <button className="mt-6 py-1 px-2 bg-[#6d87cb] text-white py-2 hover:bg-[#6d87cb]/90 cursor-pointer transition-all">
+      View Details
+    </button>
+  </div>
+  <img src={Section6} alt="Villa" className="w-full sm:w-1/2 h-auto object-cover" />
+</div>
 
-            <ul>
-              <li>Expertly designed</li>
-              <li>Luxury amenities</li>
-              <li>Custom itineraries</li>
-            </ul>
-          </div>
-
-          <button>View Details</button>
-        </div>
-        <img src={Section6} alt="" />
-      </div>
 
 <div >
 <h1 className="font-kanit text-center text-lg sm:text-xl md:text-2xl lg:text-3xl mt-30 mb-10 leading-snug">
 Villa Image Gallery
     </h1>
 
-    <div className='flex flex-col sm:flex flex-row flex-wrap justify-around gap-y-10 '>
+    <div className='flex flex-col gap-1 sm:flex flex-row flex-wrap justify-around gap-y-10 px-4 pb-20'>
       <img src={image1} alt="" />
       <img src={image2} alt="" />
       <img src={image3} alt="" />
