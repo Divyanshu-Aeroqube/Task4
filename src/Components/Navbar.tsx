@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from '../assets/logo.svg'
 
 import { Link ,NavLink
@@ -9,7 +8,7 @@ const Navbar = () => {
     <nav className='flex bg-[#3c64b1]/10 w-full sm:justify-around gap-2 items-center px-4  sm:py-2 '>
         <img className='w-25 h-10 sm:35 md:w-40' src={logo} alt="VillaCrest" />
       <div className=' sm:hidden ml-auto '>☰</div>
-      <div className='hidden space-x-4 text-nowrap sm:flex justify-around space-x-6 md:space-x-10'>
+      <div className='hidden text-nowrap sm:flex justify-around space-x-6 md:space-x-10'>
 
       <NavLink 
         to="/" 
